@@ -160,6 +160,21 @@ console.log("Italian: ", ItalianFood);
 //3. Create a function that will return only dishes whose id number matches their serving count.
 //Filter
 
+function findIdMatchingServingCount() {
+  let results = dishes.filter(function (el) {
+    if (el.id === el.servings) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+
+  return results;
+}
+
+let IdEqualsServingCount = findIdMatchingServingCount();
+console.log("Id matching servings count: ", IdEqualsServingCount);
+
 //4. Create a function that will return only dishes whose serving count is even.
 //Filter
 
