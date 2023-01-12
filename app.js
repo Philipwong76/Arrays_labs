@@ -196,6 +196,21 @@ console.log("Even serving count: ", EvenServingCount);
 //5. Create a function that will return dishes whose ingredients array is "tomato" and "cheese".
 //Filter
 
+function findTomatoAndCheese() {
+  let results = dishes.filter(function (el) {
+    if (el.ingredients[0] === "tomato" && el.ingredients[1] ==="cheese") {
+      return true;
+    } else {
+      return false;
+    }
+  });
+
+  return results;
+}
+
+let TomatoAndCheese = findTomatoAndCheese();
+console.log("Searching only for Tomato and Cheese ingredients: ", TomatoAndCheese);
+
 //6. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
 
