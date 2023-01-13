@@ -214,6 +214,18 @@ console.log("Searching only for Tomato and Cheese ingredients: ", TomatoAndChees
 //6. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
 
+function returnCusineType() {
+  let results = dishes.map(function (el) {
+    return el.cuisine
+  });
+
+  return results;
+}
+
+let CusineType = returnCusineType();
+console.log("Searching only for cusine types: ", CusineType);
+
+
 //7. Create a function that will append the cuisine type to the start of the dish's name. Ie, "Italian Pizza"
 //Map
 
