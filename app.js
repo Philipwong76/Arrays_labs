@@ -244,6 +244,25 @@ console.log("Searching only for cusine types: ", CusineTypeAndName);
 //This function should return objects 11-13 with their names changed to "Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"
 //Map, Filter
 
+function appendCusineTypeAndFitlerVegetarian() {
+  let results = dishes.map(function (el) {
+    return el.name = el.cuisine.concat(' ', el.name)
+  });
+
+  let filterresults = results.filter(function (el) {
+    if (el.includes("Vegetarian")) {
+      return true;
+    } else {
+      return false;
+    }
+  });  
+
+  return filterresults;
+}
+
+let CusineTypeAndNameAndFilterVegetarian = appendCusineTypeAndFitlerVegetarian();
+console.log("Searching only for cusine types: ", CusineTypeAndNameAndFilterVegetarian);
+
 // <<<<<<<<<<<<<<<<< BONUS <<<<<<<<<<<<<<<<<
 //9. Create a function that will return dishes whose ingredients array INCLUDES "chickpea".
 //Hint: You do not need to check the array's indexes to find out what the array INCLUDES.
