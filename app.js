@@ -237,8 +237,8 @@ function appendCusineType() {
   return results;
 }
 
-let CusineTypeAndName = appendCusineType();
-console.log("Searching only for cusine types: ", CusineTypeAndName);
+//let CusineTypeAndName = appendCusineType();
+//console.log("Searching only for cusine types: ", CusineTypeAndName);
 
 //8. Create a function that will append the cuisine type to the start of the dish's name. Then, return only the Vegetarian dish objects. 
 //This function should return objects 11-13 with their names changed to "Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"
